@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  busqueda-ciega:
+    build: .
+    image: busqueda-ciega:latest
+    container_name: practica1_app
+
+    # Compartir el servidor de ventanas X11 del host con el contenedor
+    # Necesario para mostrar la ventana de Tkinter
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+    volumes:
+      # Montar el socket de X11 del host
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      # Montar el código para desarrollo en vivo
+      - .:/app
+    network_mode: host
+
+    # Para ejecutar solo tests (sin GUI):
+    # command: python -m pytest tests/ -v
