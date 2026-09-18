@@ -4,7 +4,7 @@ Implementación completa de algoritmos de búsqueda no informada aplicados a tre
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 practica_1/
@@ -30,7 +30,7 @@ practica_1/
 
 ---
 
-## 🚀 Cómo Ejecutar
+## Cómo Ejecutar
 
 ### Opción 1: Directamente con Python (recomendado para desarrollo)
 
@@ -77,7 +77,7 @@ Necesitas un servidor X11. Opciones:
 
 ---
 
-## 🧪 Tests
+## Tests
 
 ```bash
 # Sin Docker
@@ -92,7 +92,7 @@ docker compose run busqueda-ciega python -m pytest tests/ -v
 
 ---
 
-## 🔬 Algoritmos Implementados
+## Algoritmos Implementados
 
 ### BFS — Búsqueda en Amplitud
 - Usa una **cola (deque)** — FIFO
@@ -108,7 +108,7 @@ docker compose run busqueda-ciega python -m pytest tests/ -v
 
 ---
 
-## 🎮 Problemas Implementados
+## Problemas Implementados
 
 ### A. Laberinto
 - Generación con **Recursive Backtracker** (siempre resoluble)
@@ -127,7 +127,7 @@ docker compose run busqueda-ciega python -m pytest tests/ -v
 
 ---
 
-## 📊 Métricas Medidas
+## Métricas Medidas
 
 | Métrica         | Descripción                              |
 |----------------|------------------------------------------|
@@ -138,7 +138,7 @@ docker compose run busqueda-ciega python -m pytest tests/ -v
 
 ---
 
-## 📌 Notas de Diseño
+## Notas de Diseño
 
 - DFS usa **pila explícita** (no recursivo) para evitar `RecursionError` en laberintos grandes
 - BFS garantiza solución óptima; DFS puede dar caminos más largos pero usa menos memoria en grafos profundos
