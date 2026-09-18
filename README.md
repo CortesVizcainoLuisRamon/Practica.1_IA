@@ -1,4 +1,4 @@
-# 🔍 Búsqueda Ciega — DFS & BFS
+# Búsqueda Ciega — DFS & BFS
 
 Implementación completa de algoritmos de búsqueda no informada aplicados a tres problemas clásicos de IA, con interfaz gráfica y métricas de rendimiento.
 
